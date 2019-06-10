@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,15 @@
         <h2>Temporizador</h2>
     </div>
     <script>
+        function disparaAlerta() {
         var app = document
-        .querySelector('#app');
+            .querySelector('#app');
 
         texto = app.textContent;
-
-        setInterval(() =>  {
-            alert(texto)
-        },  5000);
+        alert(texto)
+    }
+    
+    setInterval(disparaAlerta, 4000);
     </script>
 </body>
 </html>
